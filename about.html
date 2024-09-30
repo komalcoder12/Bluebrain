@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Next-Gen Critical Networks</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .header-image img {
+            width: 100%;
+               height: auto;
+              max-height: 400px;
+              object-fit: cover;
+
+        }
+        .team-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .team-member {
+            text-align: center;
+        }
+        .team-member h4 {
+            margin-top: 10px;
+        }
+        .social-media a {
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="Media/logo.png" alt="Company Logo" class="logo">
+        </div>
+        <h1>Next-Gen Critical Networks</h1>
+        <nav class="header-right">
+            <a href="index.html">Home</a>
+            <a href="products-solutions.html">Products and Solutions</a>
+           
+            <a href="services.html">Services</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="Register.html">Register</a>
+        </nav>
+    </header>
+
+    <section class="header-image">
+        <img src="Media/about.jpg" alt="About Us Banner Image">
+    </section>
+
+    <main class="container my-5">
+        <section class="about-intro">
+            <h2>About Us</h2>
+            <p>At Next-Gen Critical Networks, we are committed to delivering innovative and reliable network solutions for modern enterprises and critical infrastructure. Our goal is to provide top-notch performance, security, and scalability to meet the ever-evolving needs of our clients.</p>
+        </section>
+
+        <section class="our-mission my-5">
+            <h3>Our Mission</h3>
+            <p>Our mission is to drive technological advancement and support businesses in achieving their goals through cutting-edge network solutions. We strive to be at the forefront of technology, ensuring our clients benefit from the latest innovations in the industry.</p>
+        </section>
+
+        <section class="our-values my-5">
+            <h3>Our Values</h3>
+            <ul class="list-unstyled">
+                <li><strong>Innovation:</strong> We embrace new technologies and continuously seek to improve our solutions.</li>
+                <li><strong>Integrity:</strong> We uphold the highest standards of ethics and transparency in all our dealings.</li>
+                <li><strong>Customer Focus:</strong> We prioritize our clients' needs and work towards delivering exceptional service.</li>
+                <li><strong>Excellence:</strong> We are dedicated to achieving excellence in every project we undertake.</li>
+            </ul>
+        </section>
+
+        <section class="our-team my-5">
+            <h3>Meet Our Team</h3>
+            <div class="row">
+                <div class="col-md-4 team-member">
+                    <img src="Media/member1.jpg" alt="Team Member 1" class="img-fluid rounded-circle">
+                    <h4>Jane Doe</h4>
+                    <p>CEO & Founder</p>
+                    <p>Jane leads our team with a vision for innovation and excellence. With over 20 years of experience in the industry, he is committed to driving the company's success and ensuring client satisfaction.</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="Media/member2.jpg" alt="Team Member 2" class="img-fluid rounded-circle">
+                    <h4>John Smith</h4>
+                    <p>CTO</p>
+                    <p>John is the technological visionary behind our solutions. His expertise in network design and security ensures that we deliver cutting-edge solutions to our clients.</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="Media/member3.jpg" alt="Team Member 3" class="img-fluid rounded-circle">
+                    <h4>Emily Johnson</h4>
+                    <p>Head of Support</p>
+                    <p>Emily and her team provide unparalleled support to our clients. Her dedication to customer service ensures that all issues are resolved promptly and efficiently.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white text-center py-4">
+        <p>&copy; <span id="year"></span> Bluebrain Solutions. All rights reserved.</p>
+        <p>Providing cutting-edge network solutions and IT consulting for a brighter, more secure future.</p>
+        <p class="contact-info">
+            <a href="mailto:info@bluebrainsolutions.com" class="text-white">info@bluebrainsolutions.com</a> |
+            <a href="tel:+1234567890" class="text-white">+1 (234) 567-890</a>
+        </p>
+        <div class="social-media my-3">
+            <a href="https://www.facebook.com/BluebrainSolutions" class="text-white">Facebook</a> |
+            <a href="https://www.twitter.com/BluebrainSolutions" class="text-white">Twitter</a> |
+            <a href="https://www.linkedin.com/company/bluebrain-solutions" class="text-white">LinkedIn</a>
+        </div>
+        <p class="legal-links">
+            <a href="privacy-policy.html" class="text-white">Privacy Policy</a> |
+            <a href="terms-of-service.html" class="text-white">Terms of Service</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

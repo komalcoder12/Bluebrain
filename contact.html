@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Next-Gen Critical Networks</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .header-image img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .team-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .team-member {
+            text-align: center;
+        }
+        .team-member h4 {
+            margin-top: 10px;
+        }
+        .social-media a {
+            margin-right: 15px;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers items horizontally */
+            text-align: center; /* Centers text inside the card */
+        }
+        .card img {
+            width: 50px; /* Set the size of the icon */
+            height: 50px; /* Set the size of the icon */
+            margin-bottom: 15px; /* Space between image and text */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="Media/logo.png" alt="Company Logo" class="logo">
+        </div>
+        <h1>Next-Gen Critical Networks</h1>
+        <nav class="header-right">
+            <a href="index.html">Home</a>
+            <a href="products-solutions.html">Products and Solutions</a>
+            <a href="services.html">Services</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="Register.html">Register</a>
+        </nav>
+    </header>
+
+    <section class="header-image">
+        <img src="Media/contact.jpg" alt="About Us Banner Image">
+    </section>
+   
+    <main class="container my-5">
+        <!-- Contact Form Section using Jumbotron -->
+        <section class="contact-form mb-5">
+            <div class="jumbotron text-center">
+                <h4 class="mb-4 text-primary">Contact Us</h4>
+                <form action="submit_form.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section class="contact-info mb-5">
+            <h3 class="text-primary mb-4">Our Contact Information</h3>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Media/Address.png" alt="Address Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Address</h5>
+                            <p class="card-text">123 Innovation Drive, Suite 456, Tech City, TX 78901</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Media/phone.png" alt="Phone Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Phone</h5>
+                            <p class="card-text">+1 (234) 567-890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Media/email.png" alt="Email Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Email</h5>
+                            <p class="card-text"><a href="mailto:info@nextgencriticalnetworks.com">info@nextgencriticalnetworks.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white text-center py-4">
+        <p>&copy; <span id="year"></span> Bluebrain Solutions. All rights reserved.</p>
+        <p>Providing cutting-edge network solutions and IT consulting for a brighter, more secure future.</p>
+        <p class="contact-info">
+            <a href="mailto:info@bluebrainsolutions.com" class="text-white">info@bluebrainsolutions.com</a> |
+            <a href="tel:+1234567890" class="text-white">+1 (234) 567-890</a>
+        </p>
+        <div class="social-media my-3">
+            <a href="https://www.facebook.com/BluebrainSolutions" class="text-white">Facebook</a> |
+            <a href="https://www.twitter.com/BluebrainSolutions" class="text-white">Twitter</a> |
+            <a href="https://www.linkedin.com/company/bluebrain-solutions" class="text-white">LinkedIn</a>
+        </div>
+        <p class="legal-links">
+            <a href="privacy-policy.html" class="text-white">Privacy Policy</a> |
+            <a href="terms-of-service.html" class="text-white">Terms of Service</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

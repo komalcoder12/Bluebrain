@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Next-Gen Critical Networks</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #e9ecef;
+            font-family: 'Arial', sans-serif;
+        }
+        .header {
+            background-color: #343a40;
+            color: white;
+            padding: 15px;
+        }
+        .logo {
+            max-height: 50px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .sidebar {
+            background: #495057;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .sidebar h5 {
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+            color: #f8f9fa; /* Light color for title */
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar a {
+            color: #f8f9fa;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            display: block;
+            transition: background 0.3s, color 0.3s; /* Smooth transition */
+        }
+        .sidebar a:hover {
+            background: #6c757d; /* Lighten on hover */
+            color: white; /* Ensure text remains readable */
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #343a40;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .online-status {
+            width: 10px;
+            height: 10px;
+            background-color: #28a745; /* Green for online */
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .btn-responsive {
+            width: 100%; /* Make buttons full-width */
+            max-width: 200px; /* Set max width for buttons */
+        }
+    </style>
+</head>
+<body>
+    <header class="header d-flex justify-content-between align-items-center">
+        <div class="header-left">
+            <img src="Media/logo.png" alt="Company Logo" class="logo">
+        </div>
+        <h1 class="h4">Next-Gen Critical Networks</h1>
+        <nav class="header-right d-flex align-items-center">
+            <a href="index.html" class="text-white">Home</a>
+            <a href="products-solutions.html" class="text-white">Products</a>
+            <a href="services.html" class="text-white">Services</a>
+            <a href="courses.html" class="text-white">Courses</a>
+            <a href="about.html" class="text-white">About Us</a>
+            <a href="contact.html" class="text-white">Contact Us</a>
+            <a href="register.html" class="text-white">Register</a>
+            <span class="text-white ml-2 d-flex align-items-center">
+                <div class="online-status"></div> User Online
+            </span>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h3 class="text-center">Welcome, User!</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <h5>John Doe</h5>
+                    <ul>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#support">Support</a></li>
+                        <li><a href="#settings">Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div id="profile" class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4>User Profile</h4>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Name:</strong> John Doe</p>
+                        <p><strong>Email:</strong> johndoe@example.com</p>
+                        <p><strong>Account Created:</strong> January 1, 2023</p>
+                    </div>
+                </div>
+
+                <div id="resources" class="card">
+                    <div class="card-header bg-info text-white">
+                        <h4>Resources</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><a href="products-solutions.html">View Products & Solutions</a></li>
+                            <li><a href="services.html">Explore Services</a></li>
+                            <li><a href="courses.html">Take Courses</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="support" class="card">
+                    <div class="card-header bg-success text-white">
+                        <h4>Support</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>If you need assistance, please <a href="contact.html">contact our support team</a>.</p>
+                    </div>
+                </div>
+
+                <div id="settings" class="card">
+                    <div class="card-header bg-warning text-white">
+                        <h4>Settings</h4>
+                    </div>
+                    <div class="card-body">
+                        <p><a href="#">Change Password</a></p>
+                        <p><a href="#">Update Profile</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">
+            <a href="register.html" class="btn btn-secondary btn-responsive">Logout</a>
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Next-Gen Critical Networks. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
